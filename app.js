@@ -147,6 +147,8 @@ app.use('/campgrounds/:id/reviews', reviewRoutes)
 app.get('/', (req, res) => {
     res.render('home')
 });
+app.set('view engine', 'ejs');
+
 
 
 app.all('*', (req, res, next) => {
